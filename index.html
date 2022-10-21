@@ -1,5 +1,12 @@
 <link rel="stylesheet" href="css/bulma.css">
 <link rel="stylesheet" href="css/all.css">
+<script src="js/jquery-3.6.1.min.js" type="text/javascript"></script>
+<script src="js/shiori-api.js" type="module"></script>
+<script type="module">
+    import api from './js/shiori-api.js'
+    window.api = api
+    console.log(api)
+</script>
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"> -->
 <body>
     <nav class="navbar is-primary" role="navigation">
@@ -10,15 +17,15 @@
             <div class="navbar-item">Shiori</div>
         </div>
     </nav>
-    <div class="content mt-1">
-        <button class="button is-rounded">
+    <div class="content mt-1" id="favbar">
+        <!-- <a class="button is-rounded">
             <span class="icon">
                 <i class="fa-solid fa-folder"></i>
             </span>
             <span>One</span>
-        </button>
+        </a>
         <button class="button is-rounded">Two</button>
-        <button class="button is-rounded">Three</button>
+        <button class="button is-rounded">Three</button> -->
     </div>
     <div class="columns is-desktop is-multiline">
         <div class="column is-one-quarter">1</div>
@@ -32,4 +39,5 @@
         <div class="column is-one-quarter">9</div>
         <div class="column is-one-quarter">10</div>
     </div>
+    <script src="js/main.js" type="module"></script>
 </body>
